@@ -1,29 +1,108 @@
-# 💫 About Me:
-Third-year B.Tech student in AI & ML with a CGPA of 8.64. Passionate about machine learning and full stack development, with hands-on experience in building real-world projects like chatbots, recommendation systems, and web apps. Skilled in Python, React, Node.js, and MongoDB.<br><br>
+<div align="center">
 
+<!-- Animated typing header -->
+<a href="https://github.com/NirlepSanap">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=650&lines=AI+Security+%26+Agentic+AI+Engineer;SOC+Automation+%7C+Detection+Engineering;Building+Multi-Agent+Systems+with+CrewAI+%2B+LangChain;Final-Year+B.Tech+(AI+%26+ML)+Engineer" alt="Typing SVG" />
+</a>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)] 
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.com/channels/@me) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/share/1APBVL7cZf/) [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white)](https://pinterest.com/https://pin.it/5bi5Pmje1) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/https://www.reddit.com/u/nirlepsanap/s/J5Ge5m2Pwv) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/https://stackoverflow.com/users/30264252/nirlep-sanap) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/sanap_nirlep?t=eWM9VSIg4HsePqYKN6LiSw&s=08) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nirlepsanap2004@gmail.com) 
+<br/>
 
+![Profile Views](https://komarev.com/ghpvc/?username=NirlepSanap&color=0e75b6&style=flat-square&label=Profile+Views)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nirlep-sanap-64157423b)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://nirlepsportfolio.netlify.app/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nirlepsanap2004@gmail.com)
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=plastic&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=plastic&logo=r&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=plastic&logo=powershell&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=plastic&logo=netlify&logoColor=#00C7B7) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=plastic&logo=.net&logoColor=white) ![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=plastic&logo=angularjs&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=plastic&logo=bootstrap&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=plastic&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=plastic&logo=fastapi) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=plastic&logo=express&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=plastic&logo=next.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=plastic&logo=npm&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=plastic&logo=apache&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=plastic&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=plastic&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=plastic&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=plastic&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=plastic&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=plastic&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=plastic&logo=TensorFlow&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=plastic&logo=postman&logoColor=white) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=plastic&logo=powerbi&logoColor=black)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=NirlepSanap&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=NirlepSanap&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=NirlepSanap&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=NirlepSanap&theme=default&no-frame=false&no-bg=true&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=NirlepSanap&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+</div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=NirlepSanap&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### 👋 About Me
+
+I'm a final-year **B.Tech (AI & ML)** engineer based in Mumbai, working at the intersection of **AI and cybersecurity** — building agentic systems that automate SOC workflows and detection engineering, rather than generic GenAI apps.
+
+- 🔭 Currently an **AI Security Intern @ HaxSecurity / Tesseract Global Technologies** — building agentic triage pipelines for SOC alerts
+- 🕵️ Previously a **Cybercrime Investigator Intern @ Maharashtra Cyber State Police** — financial fraud & cyber slavery investigations
+- 🛡️ Built a **self-hosted SOC homelab** (Wazuh, Graylog, Grafana, MISP, n8n) with 21+ custom correlation rules
+- 🤖 Building multi-agent AI systems using **CrewAI, LangChain, LiteLLM, Groq & Ollama**
+- 🎯 Currently building **SentinelSwarm** — a multi-agent SOC triage framework (LangGraph + FastAPI + React)
+- 📫 Reach me at **nirlepsanap2004@gmail.com**
+
+---
+
+### 🧰 Tech Stack
+
+**Security & SOC**
+![Wazuh](https://img.shields.io/badge/Wazuh-005571?style=flat-square)
+![Graylog](https://img.shields.io/badge/Graylog-FF3633?style=flat-square)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![MISP](https://img.shields.io/badge/MISP-1E4B72?style=flat-square)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-CC0000?style=flat-square)
+![Suricata](https://img.shields.io/badge/Suricata-00A5DE?style=flat-square)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+
+**Agentic AI / GenAI**
+![CrewAI](https://img.shields.io/badge/CrewAI-6E56CF?style=flat-square)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square)
+
+**Backend & Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
+**Frontend & Mobile**
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+**Databases & Infra**
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square)
+
+---
+
+### 🚀 Featured Projects
+
+| Project | Description |
+|---|---|
+| **[SentinelSwarm](https://github.com/NirlepSanap)** *(in progress)* | Multi-agent SOC triage framework using LangGraph, FastAPI, and a React/Vite dashboard, powered by a hybrid Groq + Ollama LLM backend |
+| **HAX SOC Homelab** | Self-hosted SOC stack (Wazuh, Graylog, Grafana, MISP, n8n) with 21+ custom Graylog correlation rules and a Graylog → n8n → MISP threat-intel enrichment pipeline; validated with Atomic Red Team across 7 MITRE ATT&CK phases |
+| **MarketRadar** | Five-agent agentic AI RAG pipeline (CrewAI, LiteLLM, LangChain, Ollama, Groq) with DAG-based orchestration, a Flask REST API with SSE streaming, and a React dashboard |
+| **HaxAgent** | Custom Python agent framework implementing the ReAct reasoning loop, tool calling, memory, and multi-agent orchestration |
+| **HaxSOAR** | CrewAI-based SOAR pipeline with log-collector, threat-analyst, and alert-dispatcher agents, integrating VirusTotal and Slack APIs |
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=NirlepSanap&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NirlepSanap&layout=compact&theme=tokyonight&hide_border=true" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=NirlepSanap&theme=tokyonight&hide_border=true" />
+
+</div>
+
+---
+
+### 🎓 Education
+
+**B.Tech, Computer Science Engineering (AI & ML)** — Bharati Vidyapeeth Deemed University *(2023 – 2026)*
+CGPA: 8.44/10
+
+---
+
+<div align="center">
+
+📫 **nirlepsanap2004@gmail.com** &nbsp;|&nbsp; 🔗 **[LinkedIn](https://www.linkedin.com/in/nirlep-sanap-64157423b)** &nbsp;|&nbsp; 🌐 **[Portfolio](https://nirlepsportfolio.netlify.app/)**
+
+</div>
