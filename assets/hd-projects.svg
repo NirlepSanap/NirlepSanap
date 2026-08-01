@@ -1,0 +1,8 @@
+<svg width="420" height="50" viewBox="0 0 420 50" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+<rect width="100%" height="100%" fill="#0D1117"/>
+<text x="0" y="30" fill="#C9D1D9" font-size="20" font-weight="700" letter-spacing="4">PROJECTS</text>
+<line x1="0" y1="42" x2="420" y2="42" stroke="#21262D" stroke-width="2"/>
+<line x1="0" y1="42" x2="0" y2="42" stroke="#00E5FF" stroke-width="2">
+<animate attributeName="x2" from="0" to="420" dur="1.1s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+</line>
+</svg>

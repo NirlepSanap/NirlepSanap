@@ -1,0 +1,34 @@
+<svg width="640" height="200" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+  <rect width="100%" height="100%" rx="10" fill="#0D1117"/>
+  <rect x="0" y="0" width="100%" height="30" rx="10" fill="#161B22"/>
+  <rect x="0" y="16" width="100%" height="14" fill="#161B22"/>
+  <circle cx="20" cy="15" r="6" fill="#FF5F56"/>
+  <circle cx="42" cy="15" r="6" fill="#FFBD2E"/>
+  <circle cx="64" cy="15" r="6" fill="#27C93F"/>
+  <text x="320" y="20" fill="#8B949E" font-size="12" text-anchor="middle">nirlep@soc:~</text>
+
+  <text x="24" y="65" fill="#00E5FF" font-size="15">$ whoami</text>
+  <text x="24" y="90" fill="#C9D1D9" font-size="15" opacity="0">
+    nirlep-sanap — ai security &amp; agentic ai engineer
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.6s" fill="freeze"/>
+  </text>
+
+  <text x="24" y="120" fill="#00E5FF" font-size="15" opacity="0">
+    $ cat focus.txt
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.2s" fill="freeze"/>
+  </text>
+  <text x="24" y="145" fill="#C9D1D9" font-size="15" opacity="0">
+    soc automation · detection engineering · multi-agent systems
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.8s" fill="freeze"/>
+  </text>
+
+  <text x="24" y="175" fill="#00E5FF" font-size="15" opacity="0">
+    $ ./build --project=SentinelSwarm
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.4s" fill="freeze"/>
+  </text>
+
+  <rect x="24" y="180" width="9" height="14" fill="#00E5FF" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.4s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" begin="2.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
