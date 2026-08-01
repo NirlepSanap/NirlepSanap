@@ -1,4 +1,4 @@
-[![Nirlep Sanap](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/ascii.svg)](https://github.com/NirlepSanap)
+[![Nirlep Sanap](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/portrait.png)](https://github.com/NirlepSanap)
 
 [nirlepsportfolio.netlify.app](https://nirlepsportfolio.netlify.app/) · [linkedin](https://www.linkedin.com/in/nirlep-sanap-64157423b) · [email](mailto:nirlepsanap2004@gmail.com)
 
