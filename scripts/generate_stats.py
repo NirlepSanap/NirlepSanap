@@ -12,6 +12,7 @@ Outputs (written to assets/):
   stats.svg   - total contributions in the last year, animated count-up
   streak.svg  - current + longest contribution streak
   langs.svg   - top languages by bytes, animated bar chart
+  year.svg    - contribution activity heatmap
 
 Requires env vars: GITHUB_TOKEN, GITHUB_USERNAME
 """
@@ -69,8 +70,9 @@ def fetch_contribution_days(username: str):
     """
     data = gql(query, {"login": username})
     cal = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
-    days = [d for w in cal["weeks"] for d in w["contributionDays"]]
-    return cal["totalContributions"], days
+    weeks = [w["contributionDays"] for w in cal["weeks"]]
+    days = [d for w in weeks for d in w]
+    return cal["totalContributions"], days, weeks
 
 
 def fetch_top_languages(username: str, max_repos: int = 100):
@@ -134,16 +136,14 @@ def svg_header(width, height):
 
 
 def make_stats_svg(total_contributions: int) -> str:
-    width, height = 420, 120
+    width, height = 432, 100
     svg = [svg_header(width, height)]
     svg.append(
         f'<text x="30" y="45" fill="{FG_DIM}" font-size="13" letter-spacing="2">'
         f'CONTRIBUTIONS · LAST YEAR</text>'
     )
-    # animated count-up using SMIL on a numeric attribute proxy is unreliable
-    # across renderers, so we animate opacity + a subtle scale-in instead.
     svg.append(
-        f'<text x="30" y="90" fill="{FG}" font-size="46" font-weight="700" opacity="0">'
+        f'<text x="30" y="70" fill="{FG}" font-size="36" font-weight="700" opacity="0">'
         f'{total_contributions:,}'
         f'<animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.1s" fill="freeze"/>'
         f'</text>'
@@ -153,20 +153,20 @@ def make_stats_svg(total_contributions: int) -> str:
 
 
 def make_streak_svg(current: int, longest: int) -> str:
-    width, height = 420, 120
+    width, height = 432, 100
     svg = [svg_header(width, height)]
     svg.append(
         f'<text x="30" y="40" fill="{FG_DIM}" font-size="13" letter-spacing="2">CURRENT STREAK</text>'
     )
     svg.append(
-        f'<text x="30" y="80" fill="{FG}" font-size="34" font-weight="700" opacity="0">{current} days'
+        f'<text x="30" y="70" fill="{FG}" font-size="26" font-weight="700" opacity="0">{current} days'
         f'<animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.1s" fill="freeze"/></text>'
     )
     svg.append(
         f'<text x="230" y="40" fill="{FG_DIM}" font-size="13" letter-spacing="2">LONGEST STREAK</text>'
     )
     svg.append(
-        f'<text x="230" y="80" fill="{TEXT}" font-size="34" font-weight="700" opacity="0">{longest} days'
+        f'<text x="230" y="70" fill="{TEXT}" font-size="26" font-weight="700" opacity="0">{longest} days'
         f'<animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.3s" fill="freeze"/></text>'
     )
     svg.append("</svg>")
@@ -174,14 +174,14 @@ def make_streak_svg(current: int, longest: int) -> str:
 
 
 def make_langs_svg(langs) -> str:
-    width = 420
+    width = 432
     row_h = 34
     height = 30 + row_h * max(len(langs), 1)
     svg = [svg_header(width, height)]
     svg.append(
         f'<text x="30" y="24" fill="{FG_DIM}" font-size="13" letter-spacing="2">TOP LANGUAGES</text>'
     )
-    bar_max_w = 220
+    bar_max_w = 230
     y = 45
     for i, (name, size, frac, color) in enumerate(langs):
         pct = round(frac * 100, 1)
@@ -205,6 +205,54 @@ def make_langs_svg(langs) -> str:
     return "".join(svg)
 
 
+def make_year_svg(weeks) -> str:
+    """weeks: list of week-lists of {date, contributionCount}, oldest first."""
+    cell = 10
+    gap = 3
+    left_pad = 26
+    top_pad = 16
+    n_weeks = len(weeks)
+    width = left_pad + n_weeks * (cell + gap)
+    height = top_pad + 7 * (cell + gap) + 20
+
+    counts = [d["contributionCount"] for w in weeks for d in w]
+    max_count = max(counts) if counts else 1
+    max_count = max(max_count, 1)
+
+    def color_for(count):
+        if count == 0:
+            return "#161B22"
+        frac = min(count / max_count, 1.0)
+        levels = ["#0E4B52", "#116877", "#0FA3B1", "#00D4E8", "#00E5FF"]
+        idx = min(int(frac * (len(levels) - 1)), len(levels) - 1)
+        return levels[idx]
+
+    svg = [svg_header(width, height)]
+    month_labels_done = set()
+    for wi, week in enumerate(weeks):
+        x = left_pad + wi * (cell + gap)
+        if week:
+            d = datetime.date.fromisoformat(week[0]["date"])
+            key = (d.year, d.month)
+            if d.day <= 7 and key not in month_labels_done:
+                month_labels_done.add(key)
+                svg.append(
+                    f'<text x="{x}" y="12" fill="{FG_DIM}" font-size="9">{d.strftime("%b")}</text>'
+                )
+        for di, day in enumerate(week):
+            y = top_pad + di * (cell + gap)
+            count = day["contributionCount"]
+            fill = color_for(count)
+            delay = 0.15 + (wi * 7 + di) * 0.0025
+            svg.append(
+                f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" fill="{fill}" opacity="0">'
+                f'<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="{delay:.3f}s" fill="freeze"/>'
+                f'</rect>'
+            )
+    svg.append("</svg>")
+    return "".join(svg)
+
+
 def write(path: str, content: str):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
@@ -216,13 +264,14 @@ def main():
         print("GITHUB_TOKEN and GITHUB_USERNAME must be set", file=sys.stderr)
         sys.exit(1)
 
-    total, days = fetch_contribution_days(GITHUB_USERNAME)
+    total, days, weeks = fetch_contribution_days(GITHUB_USERNAME)
     current, longest = compute_streaks(days)
     langs = fetch_top_languages(GITHUB_USERNAME)
 
     write("assets/stats.svg", make_stats_svg(total))
     write("assets/streak.svg", make_streak_svg(current, longest))
     write("assets/langs.svg", make_langs_svg(langs))
+    write("assets/year.svg", make_year_svg(weeks))
     print(f"Generated: {total} contributions, streak {current}/{longest}, {len(langs)} languages")
 
 
