@@ -1,4 +1,4 @@
-[![Nirlep Sanap](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/portrait.png)](https://github.com/NirlepSanap)
+![Nirlep Sanap](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/network.svg)
 
 [nirlepsportfolio.netlify.app](https://nirlepsportfolio.netlify.app/) · [linkedin](https://www.linkedin.com/in/nirlep-sanap-64157423b) · [email](mailto:nirlepsanap2004@gmail.com)
 
@@ -37,7 +37,11 @@ Custom agent framework implementing the ReAct loop, tool calling, memory, multi-
 [![Current and longest streak](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/streak.svg)](assets/streak.svg)
 [![Top languages by bytes](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/langs.svg)](assets/langs.svg)
 
-<sub>The portrait above is a photo run through a character ramp, and every graphic on this page
+<br/>
+
+[![Contribution activity heatmap](https://raw.githubusercontent.com/NirlepSanap/NirlepSanap/main/assets/year.svg)](assets/year.svg)
+
+<sub>The banner above is an animated node network, and every graphic on this page
 is generated, not pulled from a third-party stats service. A
 [scheduled Action](.github/workflows/stats.yml) queries the GitHub GraphQL API once a day and
 commits only what changed. Everything animates with SMIL since GitHub strips `<script>` and
